@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Registration form for the sports competition.">
+    <title>Form102</title>
+    
+</head>
+<body>
+
+    <div style="margin-top: 20px; padding: 20px; text-align: center;">
+         <h1>Sport Competition</h1> </div>
+    <img src="Sport.jpg" alt="Sports Logo." style="width: 50%; height: auto; display: block; margin: auto;">
+    <p><strong>Come! Show us your talent and Join the sports competition where athletes from around the world come together to showcase their skills and compete to be the winner. <br> We are encouraging 10-18years old adolescents to join the competition, see you there!</strong></p>
+    <div style="display: flex; align-items: flex-start; justify-content: center; margin-top: 30px;">
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/iF7ao4Y-j2k"
+        title="Sport Intro Animation - After Effects" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe></div><br>
+    <p>Kindly Fill the Registration Form to Join the Competition.</p>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" maxlength="30"><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="10" max="18"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+            
+            <label for="sex">Sex:</label><br>
+            <select id="sex" name="sex">
+                <option>Male</option>
+                <option>Female</option>
+            </select><br><br>
+
+            <label for="contact">Contact:</label><br>
+            <input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]-{3}-[0-9]-{3}-[0-9]-{4}"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" autocomplete="on"><br><br>
+            
+            <label for="sport">Sport:</label><br>
+            <select id="sport" name="sport">
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="tennis">Tennis</option>
+                <option value="swimming">Badminton</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="volleyball">Cycling</option>
+                <option value="volleyball">Soccer</option>
+                <option value="volleyball">Golf</option>
+            </select><br><br>
+        </form>
+    </fieldset>
+
+    <h2>Message</h2>
+    <textarea id="Message" name="Message" rows="4" cols="50" placeholder="Why Do You Want To Join?"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</script>
+</body>
+</html>
